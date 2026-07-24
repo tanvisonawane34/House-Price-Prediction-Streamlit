@@ -1,43 +1,72 @@
-# 🏡 House Price Predictor
+# House Price Prediction System
 
-An interactive web application built with **Streamlit** to predict house prices based on key property features like square footage, quality ratings, build year, and neighborhood location.
+## Project Description
+An interactive Machine Learning web application built with Streamlit to predict house prices based on key property features like square footage, overall quality rating, build year, and neighborhood location.
 
----
+## Live Demo
+https://house-price-predictor-aiml.streamlit.app/
 
-## 📌 Features
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib / Seaborn
+- Scikit-Learn
+- Streamlit
+- Joblib
 
-- 🎛️ **Interactive Input Form:** Sliders and simple inputs for specs like overall quality, garage size, living area, and location.
-- ⚙️ **Automatic Preprocessing:** Built-in feature alignment, one-hot encoding, and scaling to match model parameters.
-- ⚡ **Instant Prediction:** Real-time price estimation powered by a pre-trained Linear Regression model.
+## Machine Learning Algorithm
+- Linear Regression
 
----
+## Dataset
+- House Prices - Advanced Regression Techniques (Ames Housing Dataset)
+- Dataset Link: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
 
-## 📁 Repository Structure
+## Features Used
+- Overall Quality (1-10)
+- Ground Living Area (sq ft)
+- Garage Capacity (Cars)
+- Garage Area (sq ft)
+- Total Basement Area (sq ft)
+- First Floor Area (sq ft)
+- Number of Full Bathrooms
+- Year Built
+- Total Rooms Above Ground
+- Neighborhood
 
-- `LR_house_price.pkl` — Trained Linear Regression model
-- `scaler.pkl` — Saved StandardScaler / MinMaxScaler instance
-- `columns.pkl` — Saved feature column layout
-- `app.py` — Main Streamlit web application script
-- `requirements.txt` — Project dependencies
-- `README.md` — Project documentation
+## Project Workflow
+1. Data Loading & Cleaning
+2. Exploratory Data Analysis (EDA)
+3. Feature Selection & Missing Value Handling
+4. Feature Encoding & Scaling
+5. Model Training (Linear Regression) & Evaluation
+6. Model & Scaler Serialization (.pkl)
+7. Streamlit Frontend UI Development
+8. Streamlit Cloud Deployment
 
----
+## Repository Structure
+```text
+House-Price-Prediction-Streamlit/
+│── app.py
+│── House_Price.csv
+│── LR_house_price.pkl
+│── scaler.pkl
+│── columns.pkl
+│── requirements.txt
+└── README.md
+```
 
-## 🚀 How to Run Locally
+## Run Locally
 
-1. **Clone the repository:**
-   `git clone https://github.com/tanvisonawane34/House-Price-Prediction-Streamlit.git`
-   `cd House-Price-Prediction-Streamlit`
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-2. **Install dependencies:**
-   `pip install -r requirements.txt`
+Run Streamlit App:
+```bash
+streamlit run app.py
+```
 
-3. **Run the Streamlit app:**
-   `streamlit run app.py`
-
----
-
-## 👩‍💻 Author
-
-- **Tanvi Sonawane**
-- GitHub: [@tanvisonawane34](https://github.com/tanvisonawane34)
+## Author
+Tanvi Sonawane
